@@ -1,0 +1,20 @@
+# Format: clock  timeReq  slackR/slackF  holdR/holdF  instName/pinName   # cycle(s)
+MY_CLK(R)->MY_CLK(R)	0.072    */0.011         */-0.002        current_state_reg_0_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.033         */-0.002        current_state_reg_1_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.040         */-0.002        current_state_reg_2_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.043/*         -0.005/*        delayReg_feedback_reg_0_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.048/*         -0.005/*        DoutReg_feedback_reg_7_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.048/*         -0.005/*        DoutReg_feedback_reg_1_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.049/*         -0.005/*        DoutReg_feedback_reg_3_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.049/*         -0.005/*        DoutReg_feedback_reg_6_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.049/*         -0.005/*        DoutReg_feedback_reg_0_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.050/*         -0.005/*        DoutReg_feedback_reg_2_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.050/*         -0.005/*        DoutReg_feedback_reg_4_/D    1
+MY_CLK(R)->MY_CLK(R)	0.075    0.050/*         -0.005/*        DoutReg_feedback_reg_5_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.059         */-0.002        delayReg_feedback_reg_4_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.060         */-0.002        delayReg_feedback_reg_6_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.065         */-0.002        delayReg_feedback_reg_2_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.068         */-0.002        delayReg_feedback_reg_7_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.086         */-0.002        delayReg_feedback_reg_5_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.112         */-0.002        delayReg_feedback_reg_3_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.117         */-0.002        delayReg_feedback_reg_1_/D    1
