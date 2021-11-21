@@ -7,7 +7,7 @@ Report : timing
         -max_paths 1
 Design : IIR_filter
 Version: O-2018.06-SP4
-Date   : Sat Nov 20 13:57:05 2021
+Date   : Sun Nov 21 14:25:31 2021
 ****************************************
 
 Operating Conditions: typical   Library: NangateOpenCellLibrary
@@ -61,17 +61,17 @@ Wire Load Model Mode: top
   a1SquaredReg/feedback_reg[0]/D (DFF_X1)                 0.01       2.31 f
   data arrival time                                                  2.31
 
-  clock MY_CLK (rise edge)                                9.60       9.60
-  clock network delay (ideal)                             0.00       9.60
-  clock uncertainty                                      -0.07       9.53
-  a1SquaredReg/feedback_reg[0]/CK (DFF_X1)                0.00       9.53 r
-  library setup time                                     -0.04       9.49
-  data required time                                                 9.49
+  clock MY_CLK (rise edge)                                8.00       8.00
+  clock network delay (ideal)                             0.00       8.00
+  clock uncertainty                                      -0.07       7.93
+  a1SquaredReg/feedback_reg[0]/CK (DFF_X1)                0.00       7.93 r
+  library setup time                                     -0.04       7.89
+  data required time                                                 7.89
   --------------------------------------------------------------------------
-  data required time                                                 9.49
+  data required time                                                 7.89
   data arrival time                                                 -2.31
   --------------------------------------------------------------------------
-  slack (MET)                                                        7.18
+  slack (MET)                                                        5.58
 
 
 1

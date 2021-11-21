@@ -7,7 +7,7 @@ Report : timing
         -max_paths 1
 Design : IIR_filter
 Version: O-2018.06-SP4
-Date   : Sun Nov  7 17:42:15 2021
+Date   : Sat Nov 20 19:34:47 2021
 ****************************************
 
 Operating Conditions: typical   Library: NangateOpenCellLibrary
@@ -30,7 +30,7 @@ Wire Load Model Mode: top
   input external delay                                    0.50       0.50 f
   H3[2] (in)                                              0.00       0.50 f
   mult_161/b[1] (IIR_filter_DW_mult_tc_0)                 0.00       0.50 f
-  mult_161/U178/ZN (INV_X1)                               0.04       0.54 r
+  mult_161/U177/ZN (INV_X1)                               0.04       0.54 r
   mult_161/U188/Z (XOR2_X1)                               0.08       0.63 r
   mult_161/U185/ZN (OAI22_X1)                             0.05       0.67 f
   mult_161/U37/S (HA_X1)                                  0.08       0.75 f
@@ -88,7 +88,7 @@ Wire Load Model Mode: top
   chk_ovf_multb0/Mult_result[14] (check_overflow_mult_1)
                                                           0.00       4.46 f
   chk_ovf_multb0/U10/ZN (AND2_X1)                         0.06       4.51 f
-  chk_ovf_multb0/U8/ZN (OR2_X1)                           0.07       4.58 f
+  chk_ovf_multb0/U9/ZN (OR2_X1)                           0.07       4.58 f
   chk_ovf_multb0/Output[0] (check_overflow_mult_1)        0.00       4.58 f
   add_177/A[0] (IIR_filter_DW01_add_0)                    0.00       4.58 f
   add_177/U1/ZN (AND2_X1)                                 0.04       4.63 f
@@ -111,17 +111,17 @@ Wire Load Model Mode: top
   DoutReg/feedback_reg[0]/D (DFF_X1)                      0.01       5.56 r
   data arrival time                                                  5.56
 
-  clock MY_CLK (rise edge)                               24.00      24.00
-  clock network delay (ideal)                             0.00      24.00
-  clock uncertainty                                      -0.07      23.93
-  DoutReg/feedback_reg[0]/CK (DFF_X1)                     0.00      23.93 r
-  library setup time                                     -0.03      23.90
-  data required time                                                23.90
+  clock MY_CLK (rise edge)                               12.36      12.36
+  clock network delay (ideal)                             0.00      12.36
+  clock uncertainty                                      -0.07      12.29
+  DoutReg/feedback_reg[0]/CK (DFF_X1)                     0.00      12.29 r
+  library setup time                                     -0.03      12.26
+  data required time                                                12.26
   --------------------------------------------------------------------------
-  data required time                                                23.90
+  data required time                                                12.26
   data arrival time                                                 -5.56
   --------------------------------------------------------------------------
-  slack (MET)                                                       18.34
+  slack (MET)                                                        6.70
 
 
 1

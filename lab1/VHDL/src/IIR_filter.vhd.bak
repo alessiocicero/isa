@@ -1,0 +1,66 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+--use ieee.numeric_std.all;
+
+
+entity IIR_filter is
+	port (
+		CLK     : in  std_logic;
+		RST_n   : in  std_logic;
+		H0     	: in std_logic_vector(8 downto 0);
+		H1     	: in std_logic_vector(8 downto 0);
+		H2     	: in std_logic_vector(8 downto 0);
+		H3     	: in std_logic_vector(8 downto 0);
+		VIN     : in std_logic;
+		VOUT    : out std_logic;
+		DIN     : in std_logic_vector(8 downto 0);
+		DOUT    : out std_logic_vector(8 downto 0));
+end IIR_filter;
+
+architecture rtl of IIR_filter is
+
+signal feedback, feedforward : signed(15 downto 0);
+signal fbRegOut : signed(7 downto 0);
+signal w : signed(7 downto 0);
+signal multb0 : signed(15 downto 0);
+signal DOUT_s : signed(8 downto 0);
+signal Din_8bit : signed(7 downto 0);
+
+
+component regn IS
+	GENERIC ( N : integer:=8);
+	PORT (R 	    : IN SIGNED(N-1 DOWNTO 0);
+	      Clock, Resetn : IN STD_LOGIC;
+	      Q 	    : OUT SIGNED(N-1 DOWNTO 0));
+end component;
+
+begin
+
+fbRegister : regn generic map(N => 8) port map(R => w, Clock => CLK, Resetn => RST_n, Q => fbRegOut);
+
+process (RST_n,VIN,CLK)
+begin
+	if (RST_n = '0') then
+	else
+	   if (CLK'EVENT and CLK='1') then
+      		if(VIN = '1') then
+          		VOUT <= '1';
+		   else 
+			   VOUT <= '0';
+      		end if;
+	   end if;
+	end if;
+end process;
+   Din_8bit<=signed(8 downto 1);
+   feedback <= fbRegOut * signed(H3(8 downto 1));
+	feedforward <= fbRegOut * signed(H1(8 downto 1));
+	w <= Din_8bit - feedback(15 downto 8);
+	multb0 <= w*signed(H0(8 downto 1)) ;
+	DOUT_s(7 downto 0) <= multb0(15 downto 8) + feedforward(15 downto 8);
+	DOUT_s(8) <= DOUT_s(7);
+	DOUT <= std_logic_vector(DOUT_s);
+
+end rtl;
+

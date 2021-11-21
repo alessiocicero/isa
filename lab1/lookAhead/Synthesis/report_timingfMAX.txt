@@ -7,14 +7,14 @@ Report : timing
         -max_paths 1
 Design : IIR_filter
 Version: O-2018.06-SP4
-Date   : Sat Nov 20 13:48:17 2021
+Date   : Sun Nov 21 14:21:26 2021
 ****************************************
 
 Operating Conditions: typical   Library: NangateOpenCellLibrary
 Wire Load Model Mode: top
 
   Startpoint: H3[2] (input port clocked by MY_CLK)
-  Endpoint: a1SquaredReg/feedback_reg[0]
+  Endpoint: a1SquaredReg/feedback_reg[2]
             (rising edge-triggered flip-flop clocked by MY_CLK)
   Path Group: MY_CLK
   Path Type: max
@@ -29,50 +29,59 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   input external delay                                    0.50       0.50 f
   H3[2] (in)                                              0.00       0.50 f
-  MuxM1/Y[1] (muxnbit_2to1_N8_0)                          0.00       0.50 f
-  MuxM1/U4/ZN (AOI22_X1)                                  0.05       0.55 r
-  MuxM1/U3/ZN (INV_X1)                                    0.06       0.61 f
-  MuxM1/M[1] (muxnbit_2to1_N8_0)                          0.00       0.61 f
-  mult_220/a[1] (IIR_filter_DW_mult_tc_3)                 0.00       0.61 f
-  mult_220/U171/ZN (XNOR2_X1)                             0.11       0.72 r
-  mult_220/U249/ZN (NAND2_X1)                             0.07       0.79 f
-  mult_220/U192/ZN (OAI22_X1)                             0.07       0.86 r
-  mult_220/U36/S (FA_X1)                                  0.12       0.98 f
-  mult_220/U202/ZN (AOI222_X1)                            0.11       1.09 r
-  mult_220/U181/ZN (INV_X1)                               0.03       1.12 f
-  mult_220/U201/ZN (AOI222_X1)                            0.11       1.23 r
-  mult_220/U200/ZN (OAI222_X1)                            0.07       1.29 f
-  mult_220/U9/CO (FA_X1)                                  0.10       1.39 f
-  mult_220/U8/CO (FA_X1)                                  0.09       1.48 f
-  mult_220/U7/CO (FA_X1)                                  0.09       1.57 f
-  mult_220/U6/CO (FA_X1)                                  0.09       1.66 f
-  mult_220/U5/CO (FA_X1)                                  0.09       1.75 f
-  mult_220/U4/CO (FA_X1)                                  0.09       1.84 f
-  mult_220/U3/CO (FA_X1)                                  0.09       1.93 f
-  mult_220/U2/S (FA_X1)                                   0.11       2.04 f
-  mult_220/product[14] (IIR_filter_DW_mult_tc_3)          0.00       2.04 f
+  MuxM2/Y[1] (muxnbit_2to1_N8_1)                          0.00       0.50 f
+  MuxM2/U18/ZN (AOI22_X1)                                 0.06       0.56 r
+  MuxM2/U3/ZN (INV_X1)                                    0.03       0.58 f
+  MuxM2/M[1] (muxnbit_2to1_N8_1)                          0.00       0.58 f
+  mult_220/b[1] (IIR_filter_DW_mult_tc_3)                 0.00       0.58 f
+  mult_220/U206/ZN (INV_X1)                               0.05       0.63 r
+  mult_220/U297/Z (XOR2_X1)                               0.08       0.71 r
+  mult_220/U295/ZN (OAI22_X1)                             0.05       0.76 f
+  mult_220/U162/ZN (XNOR2_X1)                             0.08       0.84 r
+  mult_220/U194/ZN (OAI222_X1)                            0.06       0.90 f
+  mult_220/U272/ZN (INV_X1)                               0.04       0.93 r
+  mult_220/U273/ZN (OAI222_X1)                            0.05       0.98 f
+  mult_220/U256/ZN (NAND2_X1)                             0.04       1.02 r
+  mult_220/U180/ZN (AND3_X1)                              0.06       1.08 r
+  mult_220/U304/ZN (OAI222_X1)                            0.05       1.12 f
+  mult_220/U242/ZN (NAND2_X1)                             0.04       1.16 r
+  mult_220/U208/ZN (NAND3_X1)                             0.04       1.20 f
+  mult_220/U247/ZN (NAND2_X1)                             0.04       1.23 r
+  mult_220/U193/ZN (NAND3_X1)                             0.04       1.27 f
+  mult_220/U282/ZN (NAND2_X1)                             0.03       1.30 r
+  mult_220/U284/ZN (NAND3_X1)                             0.03       1.33 f
+  mult_220/U6/CO (FA_X1)                                  0.10       1.43 f
+  mult_220/U188/ZN (NAND2_X1)                             0.04       1.47 r
+  mult_220/U190/ZN (NAND3_X1)                             0.04       1.51 f
+  mult_220/U216/ZN (NAND2_X1)                             0.04       1.54 r
+  mult_220/U209/ZN (NAND3_X1)                             0.04       1.58 f
+  mult_220/U222/ZN (NAND2_X1)                             0.03       1.61 r
+  mult_220/U225/ZN (NAND3_X1)                             0.03       1.65 f
+  mult_220/U226/ZN (NAND2_X1)                             0.03       1.67 r
+  mult_220/U228/ZN (NAND2_X1)                             0.03       1.70 f
+  mult_220/product[14] (IIR_filter_DW_mult_tc_3)          0.00       1.70 f
   chk_ovf_multMux/Mult_result[14] (check_overflow_mult_3)
-                                                          0.00       2.04 f
-  chk_ovf_multMux/U5/ZN (AND2_X1)                         0.06       2.10 f
-  chk_ovf_multMux/U13/ZN (OR2_X1)                         0.07       2.17 f
-  chk_ovf_multMux/Output[0] (check_overflow_mult_3)       0.00       2.17 f
-  a1SquaredReg/R[0] (regn_ld_N8_2)                        0.00       2.17 f
-  a1SquaredReg/U3/ZN (AOI22_X1)                           0.05       2.21 r
-  a1SquaredReg/U19/ZN (INV_X1)                            0.02       2.24 f
-  a1SquaredReg/feedback_reg[0]/D (DFF_X1)                 0.01       2.24 f
-  data arrival time                                                  2.24
+                                                          0.00       1.70 f
+  chk_ovf_multMux/U6/ZN (AND2_X1)                         0.05       1.75 f
+  chk_ovf_multMux/U13/ZN (OR2_X1)                         0.06       1.81 f
+  chk_ovf_multMux/Output[2] (check_overflow_mult_3)       0.00       1.81 f
+  a1SquaredReg/R[2] (regn_ld_N8_2)                        0.00       1.81 f
+  a1SquaredReg/U9/ZN (AOI22_X1)                           0.05       1.86 r
+  a1SquaredReg/U16/ZN (INV_X1)                            0.02       1.88 f
+  a1SquaredReg/feedback_reg[2]/D (DFF_X1)                 0.01       1.89 f
+  data arrival time                                                  1.89
 
-  clock MY_CLK (rise edge)                                2.40       2.40
-  clock network delay (ideal)                             0.00       2.40
-  clock uncertainty                                      -0.07       2.33
-  a1SquaredReg/feedback_reg[0]/CK (DFF_X1)                0.00       2.33 r
-  library setup time                                     -0.04       2.29
-  data required time                                                 2.29
+  clock MY_CLK (rise edge)                                2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.07       1.93
+  a1SquaredReg/feedback_reg[2]/CK (DFF_X1)                0.00       1.93 r
+  library setup time                                     -0.04       1.89
+  data required time                                                 1.89
   --------------------------------------------------------------------------
-  data required time                                                 2.29
-  data arrival time                                                 -2.24
+  data required time                                                 1.89
+  data arrival time                                                 -1.89
   --------------------------------------------------------------------------
-  slack (MET)                                                        0.05
+  slack (MET)                                                        0.00
 
 
 1
