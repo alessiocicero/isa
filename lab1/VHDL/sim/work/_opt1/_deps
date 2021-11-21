@@ -1,8 +1,0 @@
-H 2141964 11 3 0 2 2 0 0 0 0
-L 4 ieee 19 $MODEL_TECH/../ieee
-L 3 std 18 $MODEL_TECH/../std
-L 4 work 6 ./work
-D 39 ./work.check_overflow_mult(behavioural) nhM80<=4[bJIaiAWn2M7O1 0 1
-D 34 ./work.tb_mult_signed(behavioural) [VOP4<el>7YE1=TcH9QWo0 1 1
-2 0  0 BZO:TI`U3cQIcCK?3Z@JW2 1 1 1
-2 0  0 FgBkHIV4mU@NCgd7dfZNR1 0 0 1
