@@ -1,0 +1,116 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Fri Dec 17 12:20:12 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: I1/B_SIG_reg[3]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: I2/SIG_in_reg[27]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  I1/B_SIG_reg[3]/CK (DFF_X1)                             0.00       0.00 r
+  I1/B_SIG_reg[3]/QN (DFF_X1)                             0.07       0.07 f
+  U4199/ZN (INV_X2)                                       0.05       0.13 r
+  U3153/ZN (AND2_X1)                                      0.06       0.18 r
+  U3424/ZN (INV_X1)                                       0.03       0.21 f
+  U3180/Z (MUX2_X1)                                       0.07       0.28 f
+  U5327/ZN (NAND3_X1)                                     0.04       0.32 r
+  U4214/ZN (XNOR2_X1)                                     0.07       0.38 r
+  U4215/ZN (XNOR2_X1)                                     0.07       0.45 r
+  U3145/ZN (XNOR2_X1)                                     0.07       0.52 r
+  U3425/ZN (XNOR2_X1)                                     0.07       0.59 r
+  U4216/ZN (XNOR2_X1)                                     0.07       0.65 r
+  U4217/ZN (XNOR2_X1)                                     0.04       0.69 f
+  I2/mbe_multiplication/add_74/B[8] (FPmul_DW01_add_4)
+                                                          0.00       0.69 f
+  I2/mbe_multiplication/add_74/U393/ZN (OR2_X1)           0.05       0.74 f
+  I2/mbe_multiplication/add_74/U417/ZN (AOI21_X1)         0.04       0.79 r
+  I2/mbe_multiplication/add_74/U439/ZN (OAI21_X1)         0.03       0.82 f
+  I2/mbe_multiplication/add_74/U386/ZN (AOI21_X1)         0.04       0.86 r
+  I2/mbe_multiplication/add_74/U429/ZN (OAI21_X1)         0.03       0.89 f
+  I2/mbe_multiplication/add_74/U422/ZN (AOI21_X1)         0.04       0.92 r
+  I2/mbe_multiplication/add_74/U448/ZN (OAI21_X1)         0.03       0.95 f
+  I2/mbe_multiplication/add_74/U438/ZN (AOI21_X1)         0.04       0.99 r
+  I2/mbe_multiplication/add_74/U447/ZN (OAI21_X1)         0.03       1.02 f
+  I2/mbe_multiplication/add_74/U416/ZN (AOI21_X1)         0.04       1.06 r
+  I2/mbe_multiplication/add_74/U421/ZN (OAI21_X1)         0.03       1.09 f
+  I2/mbe_multiplication/add_74/U410/ZN (AOI21_X1)         0.04       1.13 r
+  I2/mbe_multiplication/add_74/U411/ZN (OAI21_X1)         0.03       1.16 f
+  I2/mbe_multiplication/add_74/U413/ZN (AOI21_X1)         0.04       1.20 r
+  I2/mbe_multiplication/add_74/U415/ZN (OAI21_X1)         0.03       1.23 f
+  I2/mbe_multiplication/add_74/U299/ZN (AOI21_X1)         0.04       1.27 r
+  I2/mbe_multiplication/add_74/U446/ZN (OAI21_X1)         0.03       1.30 f
+  I2/mbe_multiplication/add_74/U303/ZN (AOI21_X1)         0.04       1.35 r
+  I2/mbe_multiplication/add_74/U445/ZN (OAI21_X1)         0.03       1.38 f
+  I2/mbe_multiplication/add_74/U414/ZN (AOI21_X1)         0.04       1.42 r
+  I2/mbe_multiplication/add_74/U433/ZN (OAI21_X1)         0.03       1.45 f
+  I2/mbe_multiplication/add_74/U301/ZN (AOI21_X1)         0.04       1.50 r
+  I2/mbe_multiplication/add_74/U432/ZN (OAI21_X1)         0.03       1.53 f
+  I2/mbe_multiplication/add_74/U310/ZN (AOI21_X1)         0.04       1.57 r
+  I2/mbe_multiplication/add_74/U426/ZN (OAI21_X1)         0.03       1.60 f
+  I2/mbe_multiplication/add_74/U305/ZN (AOI21_X1)         0.04       1.64 r
+  I2/mbe_multiplication/add_74/U444/ZN (OAI21_X1)         0.03       1.68 f
+  I2/mbe_multiplication/add_74/U237/ZN (INV_X1)           0.03       1.71 r
+  I2/mbe_multiplication/add_74/U212/ZN (OAI21_X1)         0.03       1.74 f
+  I2/mbe_multiplication/add_74/U266/ZN (NAND2_X1)         0.03       1.78 r
+  I2/mbe_multiplication/add_74/U205/ZN (AND3_X1)          0.06       1.83 r
+  I2/mbe_multiplication/add_74/U213/ZN (OAI21_X1)         0.03       1.87 f
+  I2/mbe_multiplication/add_74/U248/ZN (NAND2_X1)         0.03       1.90 r
+  I2/mbe_multiplication/add_74/U207/ZN (NAND3_X1)         0.04       1.94 f
+  I2/mbe_multiplication/add_74/U220/ZN (NAND2_X1)         0.04       1.97 r
+  I2/mbe_multiplication/add_74/U210/ZN (NAND3_X1)         0.04       2.01 f
+  I2/mbe_multiplication/add_74/U294/ZN (NAND2_X1)         0.03       2.05 r
+  I2/mbe_multiplication/add_74/U296/ZN (NAND3_X1)         0.03       2.08 f
+  I2/mbe_multiplication/add_74/U9/CO (FA_X1)              0.10       2.17 f
+  I2/mbe_multiplication/add_74/U260/ZN (NAND2_X1)         0.04       2.21 r
+  I2/mbe_multiplication/add_74/U214/ZN (NAND3_X1)         0.04       2.26 f
+  I2/mbe_multiplication/add_74/U226/ZN (NAND2_X1)         0.04       2.30 r
+  I2/mbe_multiplication/add_74/U229/ZN (NAND3_X1)         0.05       2.34 f
+  I2/mbe_multiplication/add_74/U204/ZN (NAND2_X1)         0.04       2.38 r
+  I2/mbe_multiplication/add_74/U270/ZN (NAND3_X1)         0.03       2.42 f
+  I2/mbe_multiplication/add_74/U283/ZN (NAND2_X1)         0.04       2.45 r
+  I2/mbe_multiplication/add_74/U284/ZN (NAND3_X1)         0.04       2.49 f
+  I2/mbe_multiplication/add_74/U238/ZN (NAND2_X1)         0.04       2.53 r
+  I2/mbe_multiplication/add_74/U241/ZN (NAND3_X1)         0.03       2.56 f
+  I2/mbe_multiplication/add_74/U253/ZN (NAND2_X1)         0.03       2.59 r
+  I2/mbe_multiplication/add_74/U256/ZN (NAND3_X1)         0.03       2.62 f
+  I2/mbe_multiplication/add_74/U356/ZN (XNOR2_X1)         0.05       2.68 f
+  I2/mbe_multiplication/add_74/SUM[47] (FPmul_DW01_add_4)
+                                                          0.00       2.68 f
+  I2/SIG_in_reg[27]/D (DFF_X1)                            0.01       2.69 f
+  data arrival time                                                  2.69
+
+  clock MY_CLK (rise edge)                                2.80       2.80
+  clock network delay (ideal)                             0.00       2.80
+  clock uncertainty                                      -0.07       2.73
+  I2/SIG_in_reg[27]/CK (DFF_X1)                           0.00       2.73 r
+  library setup time                                     -0.04       2.69
+  data required time                                                 2.69
+  --------------------------------------------------------------------------
+  data required time                                                 2.69
+  data arrival time                                                 -2.69
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

@@ -1,0 +1,57 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Mon Nov 29 15:49:43 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: I2/mult_134/MY_CLK_r_REG256_S1
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: I2/mult_134/MY_CLK_r_REG202_S2
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  I2/mult_134/MY_CLK_r_REG256_S1/CK (DFFR_X1)             0.00       0.00 r
+  I2/mult_134/MY_CLK_r_REG256_S1/QN (DFFR_X1)             0.08       0.08 f
+  I2/mult_134/U3001/ZN (INV_X2)                           0.12       0.21 r
+  I2/mult_134/U2506/ZN (XNOR2_X1)                         0.10       0.31 r
+  I2/mult_134/U2682/ZN (OAI22_X1)                         0.04       0.35 f
+  I2/mult_134/U610/CO (FA_X1)                             0.11       0.46 f
+  I2/mult_134/U596/CO (FA_X1)                             0.10       0.56 f
+  I2/mult_134/U584/CO (FA_X1)                             0.10       0.66 f
+  I2/mult_134/U2227/ZN (XNOR2_X1)                         0.07       0.72 f
+  I2/mult_134/U2075/ZN (XNOR2_X1)                         0.05       0.78 f
+  I2/mult_134/MY_CLK_r_REG202_S2/D (DFF_X1)               0.01       0.79 f
+  data arrival time                                                  0.79
+
+  clock MY_CLK (rise edge)                                0.90       0.90
+  clock network delay (ideal)                             0.00       0.90
+  clock uncertainty                                      -0.07       0.83
+  I2/mult_134/MY_CLK_r_REG202_S2/CK (DFF_X1)              0.00       0.83 r
+  library setup time                                     -0.04       0.79
+  data required time                                                 0.79
+  --------------------------------------------------------------------------
+  data required time                                                 0.79
+  data arrival time                                                 -0.79
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
