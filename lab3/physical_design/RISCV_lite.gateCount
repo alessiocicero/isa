@@ -1,0 +1,6 @@
+Gate area 0.7980 um^2
+Level 0 Module RISCV_lite                               Gates=     16355 Cells=    6861 Area=   13051.8 um^2
+Level 1 Module DP_Execute_ALU_1_lt_65                   Gates=112        Cells=92       Area=      89.9 um^2
+Level 1 Module DP_Execute_ALU_1_lt_gt_62                Gates=112        Cells=92       Area=      89.6 um^2
+Level 1 Module DP_Execute_ALU_1_add_44                  Gates=218        Cells=116      Area=     174.0 um^2
+Level 1 Module DP_Execute_add_146                       Gates=163        Cells=32       Area=     130.3 um^2

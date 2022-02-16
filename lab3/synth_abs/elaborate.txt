@@ -1,0 +1,182 @@
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/gtech.db'
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'RISCV_lite'.
+Information: Building the design 'control_unit'. (HDL-193)
+
+Statistics for case statements in always block at line 91 in file
+	'../src_abs/b-ControlUnit.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            95            |    auto/auto     |
+|           103            |    auto/auto     |
+|           111            |    auto/auto     |
+|           117            |    auto/auto     |
+|           123            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Datapath'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'hazard_detection_unit'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'fetch_stage'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'regn_ld' instantiated from design 'Datapath' with
+	the parameters "N=32". (HDL-193)
+
+Inferred memory devices in process
+	in routine regn_ld_N32 line 15 in file
+		'../src/a-DataPath/a.a-FETCH/regn_ld.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'decode_stage'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'regn_ld' instantiated from design 'Datapath' with
+	the parameters "N=143". (HDL-193)
+
+Inferred memory devices in process
+	in routine regn_ld_N143 line 15 in file
+		'../src/a-DataPath/a.a-FETCH/regn_ld.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  143  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'regn_ld' instantiated from design 'Datapath' with
+	the parameters "N=12". (HDL-193)
+
+Inferred memory devices in process
+	in routine regn_ld_N12 line 15 in file
+		'../src/a-DataPath/a.a-FETCH/regn_ld.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'execute_stage'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'regn_ld' instantiated from design 'Datapath' with
+	the parameters "N=102". (HDL-193)
+
+Inferred memory devices in process
+	in routine regn_ld_N102 line 15 in file
+		'../src/a-DataPath/a.a-FETCH/regn_ld.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  102  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'regn_ld' instantiated from design 'Datapath' with
+	the parameters "N=6". (HDL-193)
+
+Inferred memory devices in process
+	in routine regn_ld_N6 line 15 in file
+		'../src/a-DataPath/a.a-FETCH/regn_ld.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'memory_stage'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'regn_ld' instantiated from design 'Datapath' with
+	the parameters "N=38". (HDL-193)
+
+Inferred memory devices in process
+	in routine regn_ld_N38 line 15 in file
+		'../src/a-DataPath/a.a-FETCH/regn_ld.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  38   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'regn_ld' instantiated from design 'Datapath' with
+	the parameters "N=3". (HDL-193)
+
+Inferred memory devices in process
+	in routine regn_ld_N3 line 15 in file
+		'../src/a-DataPath/a.a-FETCH/regn_ld.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'writeback_stage'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Decode_Logic'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegisterFile'. (HDL-193)
+
+Inferred memory devices in process
+	in routine RegisterFile line 25 in file
+		'../src/a-DataPath/a.b-DEC/RegisterFile.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    reg_block_reg    | Flip-flop | 1024  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+| RegisterFile/42  |   32   |   32    |      5       |
+| RegisterFile/43  |   32   |   32    |      5       |
+======================================================
+Presto compilation completed successfully.
+Information: Building the design 'forwarding_unit'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'muxnbit_2to1' instantiated from design 'execute_stage' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'muxnbit_4to1' instantiated from design 'execute_stage' with
+	the parameters "N=32". (HDL-193)
+Warning:  ../src/a-DataPath/a.c-EXE/muxnbit_4to1.vhd:18: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 16 in file
+	'../src/a-DataPath/a.c-EXE/muxnbit_4to1.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            18            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'ALU'. (HDL-193)
+
+Statistics for case statements in always block at line 35 in file
+	'../src_abs/ALU.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            39            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'mux2to1'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'barrel_shifter'. (HDL-193)
+
+Statistics for case statements in always block at line 18 in file
+	'../src/a-DataPath/a.c-EXE/barrel_shifter.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            23            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'absolute_value'. (HDL-193)
+Presto compilation completed successfully.
+1

@@ -1,0 +1,115 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISCV_lite
+Version: O-2018.06-SP4
+Date   : Sun Feb 13 21:08:47 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: DRAM_data_out[0]
+              (input port clocked by MY_CLK)
+  Endpoint: DP_EX_MEM_Q_reg_68_
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISCV_lite         5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  DRAM_data_out[0] (in)                                   0.00       0.50 f
+  U9553/ZN (AOI22_X1)                                     0.04       0.54 r
+  U9575/ZN (OAI221_X1)                                    0.04       0.59 f
+  U9571/ZN (INV_X1)                                       0.03       0.62 r
+  U5508/ZN (OAI21_X1)                                     0.03       0.65 f
+  DP_Execute_ALU_1_add_52/B[0] (RISCV_lite_DW01_add_0)
+                                                          0.00       0.65 f
+  DP_Execute_ALU_1_add_52/U158/ZN (AND2_X1)               0.05       0.70 f
+  DP_Execute_ALU_1_add_52/U1_1/CO (FA_X1)                 0.09       0.79 f
+  DP_Execute_ALU_1_add_52/U1_2/CO (FA_X1)                 0.09       0.88 f
+  DP_Execute_ALU_1_add_52/U1_3/CO (FA_X1)                 0.09       0.97 f
+  DP_Execute_ALU_1_add_52/U1_4/CO (FA_X1)                 0.09       1.06 f
+  DP_Execute_ALU_1_add_52/U1_5/CO (FA_X1)                 0.09       1.15 f
+  DP_Execute_ALU_1_add_52/U1_6/CO (FA_X1)                 0.09       1.24 f
+  DP_Execute_ALU_1_add_52/U1_7/CO (FA_X1)                 0.09       1.33 f
+  DP_Execute_ALU_1_add_52/U1_8/CO (FA_X1)                 0.10       1.43 f
+  DP_Execute_ALU_1_add_52/U8/ZN (NAND2_X1)                0.03       1.47 r
+  DP_Execute_ALU_1_add_52/U10/ZN (NAND3_X1)               0.05       1.52 f
+  DP_Execute_ALU_1_add_52/U14/ZN (NAND2_X1)               0.04       1.55 r
+  DP_Execute_ALU_1_add_52/U16/ZN (NAND3_X1)               0.05       1.60 f
+  DP_Execute_ALU_1_add_52/U38/ZN (NAND2_X1)               0.04       1.64 r
+  DP_Execute_ALU_1_add_52/U40/ZN (NAND3_X1)               0.05       1.68 f
+  DP_Execute_ALU_1_add_52/U50/ZN (NAND2_X1)               0.04       1.72 r
+  DP_Execute_ALU_1_add_52/U52/ZN (NAND3_X1)               0.05       1.77 f
+  DP_Execute_ALU_1_add_52/U62/ZN (NAND2_X1)               0.04       1.81 r
+  DP_Execute_ALU_1_add_52/U64/ZN (NAND3_X1)               0.04       1.85 f
+  DP_Execute_ALU_1_add_52/U88/ZN (NAND2_X1)               0.03       1.89 r
+  DP_Execute_ALU_1_add_52/U90/ZN (NAND3_X1)               0.05       1.93 f
+  DP_Execute_ALU_1_add_52/U115/ZN (NAND2_X1)              0.04       1.97 r
+  DP_Execute_ALU_1_add_52/U117/ZN (NAND3_X1)              0.05       2.01 f
+  DP_Execute_ALU_1_add_52/U102/ZN (NAND2_X1)              0.03       2.05 r
+  DP_Execute_ALU_1_add_52/U104/ZN (NAND3_X1)              0.05       2.10 f
+  DP_Execute_ALU_1_add_52/U26/ZN (NAND2_X1)               0.04       2.13 r
+  DP_Execute_ALU_1_add_52/U28/ZN (NAND3_X1)               0.05       2.18 f
+  DP_Execute_ALU_1_add_52/U32/ZN (NAND2_X1)               0.04       2.22 r
+  DP_Execute_ALU_1_add_52/U34/ZN (NAND3_X1)               0.05       2.27 f
+  DP_Execute_ALU_1_add_52/U44/ZN (NAND2_X1)               0.04       2.30 r
+  DP_Execute_ALU_1_add_52/U46/ZN (NAND3_X1)               0.05       2.35 f
+  DP_Execute_ALU_1_add_52/U20/ZN (NAND2_X1)               0.04       2.39 r
+  DP_Execute_ALU_1_add_52/U22/ZN (NAND3_X1)               0.05       2.43 f
+  DP_Execute_ALU_1_add_52/U74/ZN (NAND2_X1)               0.04       2.47 r
+  DP_Execute_ALU_1_add_52/U76/ZN (NAND3_X1)               0.05       2.52 f
+  DP_Execute_ALU_1_add_52/U94/ZN (NAND2_X1)               0.04       2.56 r
+  DP_Execute_ALU_1_add_52/U96/ZN (NAND3_X1)               0.05       2.61 f
+  DP_Execute_ALU_1_add_52/U108/ZN (NAND2_X1)              0.04       2.64 r
+  DP_Execute_ALU_1_add_52/U110/ZN (NAND3_X1)              0.04       2.69 f
+  DP_Execute_ALU_1_add_52/U121/ZN (NAND2_X1)              0.04       2.72 r
+  DP_Execute_ALU_1_add_52/U123/ZN (NAND3_X1)              0.04       2.77 f
+  DP_Execute_ALU_1_add_52/U128/ZN (NAND2_X1)              0.04       2.81 r
+  DP_Execute_ALU_1_add_52/U130/ZN (NAND3_X1)              0.05       2.85 f
+  DP_Execute_ALU_1_add_52/U138/ZN (NAND2_X1)              0.04       2.89 r
+  DP_Execute_ALU_1_add_52/U133/ZN (NAND3_X1)              0.04       2.93 f
+  DP_Execute_ALU_1_add_52/U145/ZN (NAND2_X1)              0.04       2.97 r
+  DP_Execute_ALU_1_add_52/U131/ZN (NAND3_X1)              0.04       3.01 f
+  DP_Execute_ALU_1_add_52/U155/ZN (NAND2_X1)              0.04       3.04 r
+  DP_Execute_ALU_1_add_52/U157/ZN (NAND3_X1)              0.04       3.08 f
+  DP_Execute_ALU_1_add_52/U68/ZN (NAND2_X1)               0.03       3.12 r
+  DP_Execute_ALU_1_add_52/U70/ZN (NAND3_X1)               0.05       3.16 f
+  DP_Execute_ALU_1_add_52/U82/ZN (NAND2_X1)               0.04       3.20 r
+  DP_Execute_ALU_1_add_52/U84/ZN (NAND3_X1)               0.04       3.24 f
+  DP_Execute_ALU_1_add_52/U148/ZN (NAND2_X1)              0.03       3.26 r
+  DP_Execute_ALU_1_add_52/U150/ZN (NAND2_X1)              0.02       3.29 f
+  DP_Execute_ALU_1_add_52/SUM[31] (RISCV_lite_DW01_add_0)
+                                                          0.00       3.29 f
+  U9578/ZN (AOI22_X1)                                     0.04       3.33 r
+  U9579/ZN (OAI211_X1)                                    0.04       3.37 f
+  DP_EX_MEM_Q_reg_68_/D (DFF_X1)                          0.01       3.38 f
+  data arrival time                                                  3.38
+
+  clock MY_CLK (rise edge)                                3.50       3.50
+  clock network delay (ideal)                             0.00       3.50
+  clock uncertainty                                      -0.07       3.43
+  DP_EX_MEM_Q_reg_68_/CK (DFF_X1)                         0.00       3.43 r
+  library setup time                                     -0.04       3.39
+  data required time                                                 3.39
+  --------------------------------------------------------------------------
+  data required time                                                 3.39
+  data arrival time                                                 -3.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
